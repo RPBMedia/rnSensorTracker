@@ -19,7 +19,7 @@ class App extends Component {
       host: '192.168.1.50', //change to your IP
       clientId: 'test'
     };
-    debugger;
+    
     mqtt.createClient(options)
       .then(function(client) {
         client.on('closed', function() {
