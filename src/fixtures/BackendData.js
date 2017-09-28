@@ -1,3 +1,6 @@
+
+//Added a few more sensors to the list, to properly test the
+//display in the FlatList component
 export const alarms = {
   activities: [
     {
@@ -36,6 +39,36 @@ export const alarms = {
     },
     {
       deviceId: 'abc125',
+      deviceName: 'Behind the sofa',
+      roomName: 'Livingroom',
+      roomId: 'room3',
+      batteryLevel: 98,
+      alarmActive: false,
+      online: true,
+      silenced: false
+    },
+    {
+      deviceId: 'abc126',
+      deviceName: 'Behind the sofa',
+      roomName: 'Livingroom',
+      roomId: 'room3',
+      batteryLevel: 98,
+      alarmActive: true,
+      online: true,
+      silenced: false
+    },
+    {
+      deviceId: 'abc127',
+      deviceName: 'Behind the table',
+      roomName: 'Livingroom',
+      roomId: 'room3',
+      batteryLevel: 17,
+      alarmActive: false,
+      online: true,
+      silenced: false
+    },
+    {
+      deviceId: 'abc128',
       deviceName: 'Behind the sofa',
       roomName: 'Livingroom',
       roomId: 'room3',

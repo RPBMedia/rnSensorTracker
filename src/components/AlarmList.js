@@ -36,11 +36,6 @@ class AlarmList extends Component {
 
       return (
         <View>
-          <CardSection>
-            <Text style={styles.listHeader}>
-              Activities
-            </Text>
-          </CardSection>
           <FlatList
             data={this.props.activities}
             keyExtractor={item => item.id}
@@ -49,7 +44,7 @@ class AlarmList extends Component {
             )}
           />
 
-          <CardSection>
+          <CardSection style={styles.listHeaderContainer}>
             <Text style={styles.listHeader}>
               Sensors
             </Text>
@@ -67,11 +62,17 @@ class AlarmList extends Component {
 }
 
 const styles = {
+  listHeaderContainer: {
+    height: 30,
+    justifyContent: 'center',
+    fontSize: 14,
+    paddingTop: 4,
+    borderColor: 'black',
+    borderWidth: 2,
+  },
   listHeader: {
-    height: 50,
     justifyContent: 'center',
     fontSize: 16,
-    paddingTop: 15
   }
 }
 
