@@ -70,7 +70,7 @@ class SensorDetails extends Component {
   }
 
   render() {
-    
+
     const {
       deviceName,
       roomName,

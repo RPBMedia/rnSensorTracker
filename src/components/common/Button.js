@@ -1,5 +1,4 @@
 import React from 'react';
-//TouchableOpacity is used to provide a user with an opacity-based feedback after tapping a button
 import { Text, TouchableOpacity } from 'react-native';
 
 const Button = ({ onPress, children }) => {

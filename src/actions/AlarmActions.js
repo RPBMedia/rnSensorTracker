@@ -6,10 +6,9 @@ import {
 } from './types';
 import _ from 'lodash';
 
-import alarms from '../fixtures/BackendDatass';
+import { alarms } from '../fixtures/BackendData';
 
 export const fetchActivities = () => {
-
 
   return {
     type: ACTIVITIES_FETCH_SUCCESS,
@@ -28,8 +27,9 @@ export const fetchSensors = () => {
 export const silenceSensorAlarm = (sensor) => {
 
   //Update the list in the "backend"
-  // sensorInList = _.find(alarms.sensors, (sen) => sen.deviceId === sensor.deviceId);
-  // sensorInList.silenced = true;
+  //at this point, by importing the mqtt client, there
+  //should be some sort of publish call to change the state
+  //of a specific alarm
 
   return {
     type: UPDATE_SENSOR_SUCCESS,
