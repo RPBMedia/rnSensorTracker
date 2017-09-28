@@ -18,6 +18,9 @@ export const fetchActivities = () => {
 
 export const fetchSensors = () => {
 
+  //We we could dispatch a redux-thunk event once we got
+  //the response from the request to mqtt
+
   return {
     type: SENSORS_FETCH_SUCCESS,
     payload: alarms.sensors
