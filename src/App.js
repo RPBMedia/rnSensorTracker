@@ -19,7 +19,10 @@ class App extends Component {
       host: '192.168.1.50', //change to your IP
       clientId: 'test'
     };
-    
+
+    //Unfortunately mqtt was returning undefined and i could not use the createClient
+    //method. So in order to still present the React layer of the app, I decided to
+    //create a fixture file to mock the backend data
     mqtt.createClient(options)
       .then(function(client) {
         client.on('closed', function() {
